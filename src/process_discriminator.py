@@ -42,7 +42,7 @@ def get_keys(dim, order):
 def Phi(X, order, normalise=True, compute_sigs=True):
     if compute_sigs:
         dim = np.shape(X)[1]
-        sig = tosig.stream2sig(np.array(X), order)
+        sig = tosig.stream2sig(X, order)
     else:
         dim = 2
         sig = np.array(X)
